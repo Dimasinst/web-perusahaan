@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            position: relative;
+            min-height: 100vh;
+        }
+        .product-info {
+            border: 1px solid #000;
+            padding: 20px;
+        }
+        .product-info h3 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .product-info p {
+            font-size: 14px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        img.product-image {
+            max-width: 100%;
+            height: auto;
+        }
+        .btn-back {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+        .collapse-btn {
+            margin-top: 10px;
+            margin-right: 5px;
+        }
+       
+        .collapse {
+    display: none;
+}
+
+.collapse.show {
+    display: block;
+}
+
+#searchInput {
+        border: 2px solid blue;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <h2 class="text-center mb-4">PROJECT INFORMATION 4L45V</h2>
+        <div class="col-md-6">
+           <center><input type="text" id="searchInput" class="form-control" placeholder="Cari Part..."></center>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="asset/image/upcoming.jpg" class="product-image" alt="Gambar Produk">
+            </div>
+            
+            <div class="col-md-8">
+                <div class="product-info">
+                    <h3>Deskripsi Item:</h3>
+                    <table>
+                        <tr>
+                            <td><strong>Customer:</strong></td>
+                            <td>MITSUBISHI MOTOR KRAMA YUDHA INDONESIA</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Model:</strong></td>
+                            <td>4L45V (HYBRID)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2D/3D Drawing:</strong></td>
+                            <td>20 Desember 2021</td>
+                        </tr>
+                        <tr>
+                            <td><strong>LOI Issued:</strong></td>
+                            <td>17 Desember 2021</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tooling Order:</strong></td>
+                            <td>Januari 2022 (Life Time Dies 2,5 Year,Spare part 10 Year)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>MKT Kick Off:</strong></td>
+                            <td>8 Desember 2021</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Volume:</strong></td>
+                            <td>2443 Unit/Month</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Model Life:</strong></td>
+                            <td>2,5 Years</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Plant Operation:</strong></td>
+                            <td>SUMMIT ADYAWINSA INDONESIA</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Delivery location:</strong></td>
+                            <td>FUJITRANS</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Part Progress:</strong></td>
+                            <td>MASS PRO 100% (Agustus 2023)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pallet Progress:</strong></td>
+                            <td>100%</td>
+                        </tr>
+                    </table>
+                </div>
+                    
+                    <table>
+                        <!-- Table content -->
+                    
+
+                    <!-- Collapse 1 -->
+                    <div class="collapse-btn">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                            Item 1
+                        </button>
+                    </div>
+                    
+                    <!--  collapse 1 content -->
+                    <div class="collapse" id="collapseExample1">
+                        <div class="card card-body">
+                            <img src="" alt="Description of the image" style="max-width:1000px;">
+                            <p>Some placeholder content for the second collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.</p>
+                            
+                            <!-- Tombol-tombol berjejer -->
+                            <div class="btn-group" role="group" aria-label="Button group">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample331" aria-expanded="false" aria-controls="collapseExample331" onclick="hideOtherCollapse('collapseExample331')">
+                                    Assembly Part List
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample441" aria-expanded="false" aria-controls="collapseExample441" onclick="hideOtherCollapse('collapseExample441')">
+                                    Child Item 2
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample551" aria-expanded="false" aria-controls="collapseExample551" onclick="hideOtherCollapse('collapseExample551')">
+                                    Child Item 3
+                                </button>
+                            </div>
+                            
+                            <!-- Isi collapse-nya -->
+                            <div class="collapse" id="collapseExample331">
+                                <div class="card card-body">
+                                    <img src="" alt="Description of the image" style="max-width: 1000px;">
+                                    Isi child item 1
+                                </div>
+                            </div>
+                            
+                            <div class="collapse" id="collapseExample441">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 2
+                                </div>
+                            </div>
+                
+                            <div class="collapse" id="collapseExample551">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- Collapse 2 -->
+                    <div class="collapse-btn">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                            Item 2
+                        </button>
+                    </div>
+                    
+                    <!-- collapse 2 content -->
+                    <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                            <img src="" alt="Description of the image" style="max-width: 1000px;">
+                            <p>Some placeholder content for the second collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.</p>
+                            
+                            <!-- Tombol-tombol berjejer -->
+                            <div class="btn-group" role="group" aria-label="Button group">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample332" aria-expanded="false" aria-controls="collapseExample332" onclick="hideOtherCollapse('collapseExample332')">
+                                    Assembly Part List
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample442" aria-expanded="false" aria-controls="collapseExample442" onclick="hideOtherCollapse('collapseExample442')">
+                                    Child Item 2
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample552" aria-expanded="false" aria-controls="collapseExample552" onclick="hideOtherCollapse('collapseExample552')">
+                                    Child Item 3
+                                </button>
+                            </div>
+                            
+                            <!-- Isi collapse-nya -->
+                            <div class="collapse" id="collapseExample332">
+                                <div class="card card-body">
+                                    <img src="" alt="Description of the image" style="max-width: 1000px;">
+                                    Isi child item 1
+                                </div>
+                            </div>
+                            
+                            <div class="collapse" id="collapseExample442">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 2
+                                </div>
+                            </div>
+                
+                            <div class="collapse" id="collapseExample552">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="collapse-btn">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample2">
+                            Item 3
+                        </button>
+                    </div>
+                    
+                    <!--  collapse 3 content -->
+                    <div class="collapse" id="collapseExample3">
+                        <div class="card card-body">
+                            <img src="" alt="Description of the image" style="max-width: 1000px;">
+                            Some placeholder content for the second collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+
+                            <div class="btn-group" role="group" aria-label="Button group">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample333" aria-expanded="false" aria-controls="collapseExample333" onclick="hideOtherCollapse('collapseExample333')">
+                                    Assembly Part List
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample443" aria-expanded="false" aria-controls="collapseExample443" onclick="hideOtherCollapse('collapseExample443')">
+                                    Child Item 2
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample553" aria-expanded="false" aria-controls="collapseExample553" onclick="hideOtherCollapse('collapseExample553')">
+                                    Child Item 3
+                                </button>
+                            </div>
+
+                            <div class="collapse" id="collapseExample333">
+                                <div class="card card-body">
+                                    <img src="" alt="Description of the image" style="max-width: 1000px;">
+                                    Isi child item 1
+                                </div>
+                            </div>
+                            
+                            <div class="collapse" id="collapseExample443">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 2
+                                </div>
+                            </div>
+                
+                            <div class="collapse" id="collapseExample553">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 3
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
+
+
+                    <div class="collapse-btn">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample2">
+                            Item 4
+                        </button>
+                    </div>
+                    
+                    <!-- collapse 4 content -->
+                    <div class="collapse" id="collapseExample4">
+                        <div class="card card-body">
+                            <img src="" alt="Description of the image" style="max-width: 1000px;">
+                            Some placeholder content for the second collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                            <div class="btn-group" role="group" aria-label="Button group">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample334" aria-expanded="false" aria-controls="collapseExample334" onclick="hideOtherCollapse('collapseExample334')">
+                                    Assembly Part List
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample444" aria-expanded="false" aria-controls="collapseExample444" onclick="hideOtherCollapse('collapseExample444')">
+                                    Child Item 2
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample554" aria-expanded="false" aria-controls="collapseExample554" onclick="hideOtherCollapse('collapseExample554')">
+                                    Child Item 3
+                                </button>
+                            </div>
+
+                            <div class="collapse" id="collapseExample334">
+                                <div class="card card-body">
+                                    <img src="" alt="Description of the image" style="max-width: 1000px;">
+                                    Isi child item 1
+                                </div>
+                            </div>
+                            
+                            <div class="collapse" id="collapseExample444">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 2
+                                </div>
+                            </div>
+                
+                            <div class="collapse" id="collapseExample554">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 3
+                                </div>
+                            </div>
+
+                        </div>
+                    </div> 
+
+
+                    <div class="collapse-btn">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample2">
+                            Item 5
+                        </button>
+                    </div>
+                    
+                    <!--collapse 5 content -->
+                    <div class="collapse" id="collapseExample5">
+                        <div class="card card-body">
+                            <img src="" alt="Description of the image" style="max-width: 1000px;">
+                            Some placeholder content for the second collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                            <div class="btn-group" role="group" aria-label="Button group">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample335" aria-expanded="false" aria-controls="collapseExample335" onclick="hideOtherCollapse('collapseExample335')">
+                                    Assembly Part List
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample445" aria-expanded="false" aria-controls="collapseExample445" onclick="hideOtherCollapse('collapseExample445')">
+                                    Child Item 2
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample555" aria-expanded="false" aria-controls="collapseExample555" onclick="hideOtherCollapse('collapseExample555')">
+                                    Child Item 3
+                                </button>
+                            </div>
+
+                            <div class="collapse" id="collapseExample335">
+                                <div class="card card-body">
+                                    <img src="" alt="Description of the image" style="max-width: 1000px;">
+                                    Isi child item 1
+                                </div>
+                            </div>
+                            
+                            <div class="collapse" id="collapseExample445">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 2
+                                </div>
+                            </div>
+                
+                            <div class="collapse" id="collapseExample555">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 3
+                                </div>
+                            </div>
+
+                        </div>
+                    </div> 
+
+
+                    <div class="collapse-btn">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample2">
+                            Item 6
+                        </button>
+                    </div>
+                    
+                    <!--collapse 6 content -->
+                    <div class="collapse" id="collapseExample6">
+                        <div class="card card-body">
+                            <img src="" alt="Description of the image" style="max-width: 1000px;">
+                            Some placeholder content for the second collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                            <div class="btn-group" role="group" aria-label="Button group">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample336" aria-expanded="false" aria-controls="collapseExample336" onclick="hideOtherCollapse('collapseExample336')">
+                                    Assembly Part List
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample446" aria-expanded="false" aria-controls="collapseExample446" onclick="hideOtherCollapse('collapseExample446')">
+                                    Child Item 2
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample556" aria-expanded="false" aria-controls="collapseExample556" onclick="hideOtherCollapse('collapseExample556')">
+                                    Child Item 3
+                                </button>
+                            </div>
+
+                            <div class="collapse" id="collapseExample336">
+                                <div class="card card-body">
+                                    <img src="" alt="Description of the image" style="max-width: 1000px;">
+                                    Isi child item 1
+                                </div>
+                            </div>
+                            
+                            <div class="collapse" id="collapseExample446">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 2
+                                </div>
+                            </div>
+                
+                            <div class="collapse" id="collapseExample556">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 3
+                                </div>
+                            </div>
+
+                        </div>
+                    </div> 
+
+
+                    <div class="collapse-btn">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample2">
+                            Item 7
+                        </button>
+                    </div>
+                    
+                    <!--collapse 7 content -->
+                    <div class="collapse" id="collapseExample7">
+                        <div class="card card-body">
+                            <img src="" alt="Description of the image" style="max-width: 1000px;">
+                            Some placeholder content for the second collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                            <div class="btn-group" role="group" aria-label="Button group">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample337" aria-expanded="false" aria-controls="collapseExample337" onclick="hideOtherCollapse('collapseExample337')">
+                                    Assembly Part List
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample447" aria-expanded="false" aria-controls="collapseExample447" onclick="hideOtherCollapse('collapseExample447')">
+                                    Child Item 2
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample557" aria-expanded="false" aria-controls="collapseExample557" onclick="hideOtherCollapse('collapseExample557')">
+                                    Child Item 3
+                                </button>
+                            </div>
+
+                            <div class="collapse" id="collapseExample337">
+                                <div class="card card-body">
+                                    <img src="" alt="Description of the image" style="max-width: 1000px;">
+                                    Isi child item 1
+                                </div>
+                            </div>
+                            
+                            <div class="collapse" id="collapseExample447">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 2
+                                </div>
+                            </div>
+                
+                            <div class="collapse" id="collapseExample557">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 3
+                                </div>
+                            </div>
+
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+    </table>
+        <br>
+            <br>
+        <br>
+        <!-- Back button -->
+    <a href="index.html" class="btn btn-primary btn-back">Kembali</a>
+    </div>
+    
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        function toggleCollapse(collapseId) {
+            var collapse = document.getElementById(collapseId);
+            var allCollapses = document.querySelectorAll('.collapse');
+            allCollapses.forEach(function(collapseItem) {
+                if (collapseItem.id !== collapseId) {
+                    collapseItem.classList.remove('show');
+                }
+            });
+            collapse.classList.toggle('show');
+        }
+    </script>
+    <script>
+        // Fungsi untuk melakukan pencarian
+        function searchCollapse() {
+            var input, filter, buttons, button, i, txtValue;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+            buttons = document.querySelectorAll(".collapse-btn button");
+            for (i = 0; i < buttons.length; i++) {
+                button = buttons[i];
+                txtValue = button.textContent || button.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    button.style.display = "";
+                } else {
+                    button.style.display = "none";
+                }
+            }
+        }
+    
+        // Menambahkan event listener untuk inputan pencarian
+        document.getElementById("searchInput").addEventListener("keyup", searchCollapse);
+        
+    </script>
+   
+   
+
+
+    
+</body>
+</html>

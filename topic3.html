@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            position: relative;
+            min-height: 100vh;
+        }
+        .product-info {
+            border: 1px solid #000;
+            padding: 20px;
+        }
+        .product-info h3 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .product-info p {
+            font-size: 14px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        img.product-image {
+            max-width: 100%;
+            height: auto;
+        }
+        .btn-back {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+        .btn-next {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+        .collapse-btn {
+            margin-top: 10px;
+            margin-right: 5px;
+        }
+        #searchInput {
+            border: 2px solid blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <h2 class="text-center mb-4">PROJECT INFORMATION 5H45</h2>
+        <div class="col-md-6">
+            <input type="text" id="searchInput" class="form-control" placeholder="Cari Part...">
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="asset/image/5H45.png" class="product-image" alt="Gambar Produk">
+            </div>
+            
+            <div class="col-md-8">
+                <div class="product-info">
+                    <h3>Deskripsi Item:</h3>
+                    <table>
+                        <tr>
+                            <td><strong>Customer:</strong></td>
+                            <td>MITSUBISHI MOTOR KRAMA YUDHA INDONESIA</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Model:</strong></td>
+                            <td>5H45 (BSUV)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2D/3D Drawing:</strong></td>
+                            <td>18 Maret 2022</td>
+                        </tr>
+                        <tr>
+                            <td><strong>LOI Issued:</strong></td>
+                            <td>2 Maret 2022</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tooling Order:</strong></td>
+                            <td>April 2022</td>
+                        </tr>
+                        <tr>
+                            <td><strong>MKT Kick Off:</strong></td>
+                            <td>22 Desember 2022</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Volume:</strong></td>
+                            <td>5000 Unit/Month</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Model Life:</strong></td>
+                            <td>6 Years</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Plant Operation:</strong></td>
+                            <td>SUMMIT ADYAWINSA INDONESIA</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Delivery location:</strong></td>
+                            <td>MMKI</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Part Progress:</strong></td>
+                            <td>PT LHD EVENT 100% (MASPRO -> Januari 2024)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pallet Progress:</strong></td>
+                            <td>78,5% (MANUFACTURING PACKAGING)</td>
+                        </tr>
+                    </table>
+                </div>
+                    
+                    <table>
+                        <!-- Table content -->
+                    </table>
+                    
+                    <div class="collapse-btn">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                            1. REINF ASSY,FR S/MBR,RR UPR LH 5220K733
+
+                        </button>
+                    </div>
+                    
+                    <!--  isi item 1 -->
+                    <div class="collapse" id="collapseExample1">
+                        <div class="card card-body">
+                            <img src="asset/image/item1-5H45.png" alt="Description of the image" style="max-width:1000px;">
+                            <p>Isi Item 1</p>
+                            
+                            <!-- Tombol-tombol berjejer -->
+                            <div class="btn-group" role="group" aria-label="Button group">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample311" aria-expanded="false" aria-controls="collapseExample311" onclick="hideOtherCollapse('collapseExample311')">
+                                    Assembly Part List
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample312" aria-expanded="false" aria-controls="collapseExample312" onclick="hideOtherCollapse('collapseExample312')">
+                                    Child Item 2
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample313" aria-expanded="false" aria-controls="collapseExample313" onclick="hideOtherCollapse('collapseExampl313')">
+                                    Child Item 3
+                                </button>
+                            </div>
+                            
+                            <!-- Isi collapse-nya -->
+                            <div class="collapse" id="collapseExample311">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 1000px;">
+                                    Isi child item 1
+                                </div>
+                            </div>
+                            
+                            <div class="collapse" id="collapseExample312">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 2
+                                </div>
+                            </div>
+                
+                            <div class="collapse" id="collapseExample313">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <!-- Second collapse trigger -->
+                    <div class="collapse-btn">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                            2. REINF ASSY,FR S/MBR,RR UPR RH 5220K734
+ 
+
+                        </button>
+                    </div>
+                    
+                    <!--  isi item 2 -->
+                    <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                            <img src="asset/image/item2-5h45.png" alt="Description of the image" style="max-width:1000px;">
+                            <p>Isi Item 1</p>
+                            
+                            <!-- Tombol-tombol berjejer -->
+                            <div class="btn-group" role="group" aria-label="Button group">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampletopic321" aria-expanded="false" aria-controls="collapseExampletopic321" onclick="hideOtherCollapse('collapseExampletopic321')">
+                                    Assembly Part List
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampletopic322" aria-expanded="false" aria-controls="collapseExampletopic322" onclick="hideOtherCollapse('collapseExampletopic322')">
+                                    Child Item 2
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampletopic323" aria-expanded="false" aria-controls="collapseExampletopic323" onclick="hideOtherCollapse('collapseExampletopic323')">
+                                    Child Item 3
+                                </button>
+                            </div>
+                            
+                            <!-- Isi collapse-nya -->
+                            <div class="collapse" id="collapseExampletopic321">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 1000px;">
+                                    Isi child item 1
+                                </div>
+                            </div>
+                            
+                            <div class="collapse" id="collapseExampletopic322">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 2
+                                </div>
+                            </div>
+                
+                            <div class="collapse" id="collapseExampletopic323">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+
+                    <div class="collapse-btn">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample2">
+                            3. REINF,BACKBONE LWR5251D430
+                             
+                        </button>
+                    </div>
+                    
+                   <!--  isi item 3 -->
+                   <div class="collapse" id="collapseExample3">
+                    <div class="card card-body">
+                        <img src="asset/image/item3-5h45.png" alt="Description of the image" style="max-width:1000px;">
+                        <p>Isi Item 1</p>
+                        
+                        <!-- Tombol-tombol berjejer -->
+                        <div class="btn-group" role="group" aria-label="Button group">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample331" aria-expanded="false" aria-controls="collapseExample331" onclick="hideOtherCollapse('collapseExample331')">
+                                Assembly Part List
+                            </button>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample332" aria-expanded="false" aria-controls="collapseExampl332" onclick="hideOtherCollapse('collapseExample332')">
+                                Child Item 2
+                            </button>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample333" aria-expanded="false" aria-controls="collapseExample333" onclick="hideOtherCollapse('collapseExample333')">
+                                Child Item 3
+                            </button>
+                        </div>
+                        
+                        <!-- Isi collapse-nya -->
+                        <div class="collapse" id="collapseExample331">
+                            <div class="card card-body">
+                                <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 1000px;">
+                                Isi child item 1
+                            </div>
+                        </div>
+                        
+                        <div class="collapse" id="collapseExample332">
+                            <div class="card card-body">
+                                <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                Isi child item 2
+                            </div>
+                        </div>
+            
+                        <div class="collapse" id="collapseExample333">
+                            <div class="card card-body">
+                                <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                Isi child item 3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                    <div class="collapse-btn">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                            4. BRKT,FR FENDER 5253BH44
+                             
+                        </button>
+                    </div>
+                    
+                    <!-- isi item 4 -->
+                    <div class="collapse" id="collapseExample4">
+                        <div class="card card-body">
+                            <img src="asset/image/item4-5h45.png" alt="Description of the image" style="max-width:1000px;">
+                            <p>Isi Item 1</p>
+                            
+                            <!-- Tombol-tombol berjejer -->
+                            <div class="btn-group" role="group" aria-label="Button group">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample341" aria-expanded="false" aria-controls="collapseExample341" onclick="hideOtherCollapse('collapseExample341')">
+                                    Assembly Part List
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample342" aria-expanded="false" aria-controls="collapseExample342" onclick="hideOtherCollapse('collapseExample342')">
+                                    Child Item 2
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample343" aria-expanded="false" aria-controls="collapseExample343" onclick="hideOtherCollapse('collapseExample343')">
+                                    Child Item 3
+                                </button>
+                            </div>
+                            
+                            <!-- Isi collapse-nya -->
+                            <div class="collapse" id="collapseExample341">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 1000px;">
+                                    Isi child item 1
+                                </div>
+                            </div>
+                            
+                            <div class="collapse" id="collapseExample342">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 2
+                                </div>
+                            </div>
+                
+                            <div class="collapse" id="collapseExample343">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="collapse-btn">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+                            5. REINF,STRUT HOUSE 5220L701
+                            
+                        </button>
+                    </div>
+                    
+                    <!--  isi item 5 -->
+                    <div class="collapse" id="collapseExample5">
+                        <div class="card card-body">
+                            <img src="" alt="Description of the image" style="max-width:1000px;">
+                            <p>Isi Item 1</p>
+                            
+                            <!-- Tombol-tombol berjejer -->
+                            <div class="btn-group" role="group" aria-label="Button group">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample351" aria-expanded="false" aria-controls="collapseExample351" onclick="hideOtherCollapse('collapseExample3551')">
+                                    Assembly Part List
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample352" aria-expanded="false" aria-controls="collapseExample352" onclick="hideOtherCollapse('collapseExample352')">
+                                    Child Item 2
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample353" aria-expanded="false" aria-controls="collapseExample353" onclick="hideOtherCollapse('collapseExample353')">
+                                    Child Item 3
+                                </button>
+                            </div>
+                            
+                            <!-- Isi collapse-nya -->
+                            <div class="collapse" id="collapseExample351">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 1000px;">
+                                    Isi child item 1
+                                </div>
+                            </div>
+                            
+                            <div class="collapse" id="collapseExampl352">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 2
+                                </div>
+                            </div>
+                
+                            <div class="collapse" id="collapseExample353">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="collapse-btn">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
+                            6. REINF ASSY,BACKBONE 5251G117
+                             
+                        </button>
+                    </div>
+                    
+                    <!--  isi item 6 -->
+                    <div class="collapse" id="collapseExample6">
+                        <div class="card card-body">
+                            <img src="asset/image/item6-5H45.png" alt="Description of the image" style="max-width:1000px;">
+                            <p>Isi Item 1</p>
+                            
+                            <!-- Tombol-tombol berjejer -->
+                            <div class="btn-group" role="group" aria-label="Button group">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample361" aria-expanded="false" aria-controls="collapseExample361" onclick="hideOtherCollapse('collapseExample361')">
+                                    Assembly Part List
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample362" aria-expanded="false" aria-controls="collapseExample362" onclick="hideOtherCollapse('collapseExample362')">
+                                    Child Item 2
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample363" aria-expanded="false" aria-controls="collapseExample363" onclick="hideOtherCollapse('collapseExample363')">
+                                    Child Item 3
+                                </button>
+                            </div>
+                            
+                            <!-- Isi collapse-nya -->
+                            <div class="collapse" id="collapseExample361">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 1000px;">
+                                    Isi child item 1
+                                </div>
+                            </div>
+                            
+                            <div class="collapse" id="collapseExample362">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 2
+                                </div>
+                            </div>
+                
+                            <div class="collapse" id="collapseExample363">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="collapse-btn">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+                            7. PLATE,NUT 5253BH43
+                             
+                        </button>
+                    </div>
+                    
+                    <!--  isi item 7 -->
+                    <div class="collapse" id="collapseExample7">
+                        <div class="card card-body">
+                            <img src="asset/image/item7-5H45.png" alt="Description of the image" style="max-width:1000px;">
+                            <p>Isi Item 1</p>
+                            
+                            <!-- Tombol-tombol berjejer -->
+                            <div class="btn-group" role="group" aria-label="Button group">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample371" aria-expanded="false" aria-controls="collapseExample371" onclick="hideOtherCollapse('collapseExample371')">
+                                    Assembly Part List
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample372" aria-expanded="false" aria-controls="collapseExample372" onclick="hideOtherCollapse('collapseExample372')">
+                                    Child Item 2
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample373" aria-expanded="false" aria-controls="collapseExample373" onclick="hideOtherCollapse('collapseExample373')">
+                                    Child Item 3
+                                </button>
+                            </div>
+                            
+                            <!-- Isi collapse-nya -->
+                            <div class="collapse" id="collapseExample371">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 1000px;">
+                                    Isi child item 1
+                                </div>
+                            </div>
+                            
+                            <div class="collapse" id="collapseExample372">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 2
+                                </div>
+                            </div>
+                
+                            <div class="collapse" id="collapseExample373">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="collapse-btn">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample8">
+                            8. BRKT ASSY, FR SEAT SIDE,RR LH 5253BH43
+                            
+                             
+                        </button>
+                    </div>
+                    
+                    <!--  isi item 8 -->
+                    <div class="collapse" id="collapseExample8">
+                        <div class="card card-body">
+                            <img src="asset/image/item8-5H45.png" alt="Description of the image" style="max-width:1000px;">
+                            <p>Isi Item 1</p>
+                            
+                            <!-- Tombol-tombol berjejer -->
+                            <div class="btn-group" role="group" aria-label="Button group">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample381" aria-expanded="false" aria-controls="collapseExample381" onclick="hideOtherCollapse('collapseExample381')">
+                                    Assembly Part List
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample382" aria-expanded="false" aria-controls="collapseExample382" onclick="hideOtherCollapse('collapseExample382')">
+                                    Child Item 2
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample383" aria-expanded="false" aria-controls="collapseExampl383" onclick="hideOtherCollapse('collapseExample383')">
+                                    Child Item 3
+                                </button>
+                            </div>
+                            
+                            <!-- Isi collapse-nya -->
+                            <div class="collapse" id="collapseExample381">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 1000px;">
+                                    Isi child item 1
+                                </div>
+                            </div>
+                            
+                            <div class="collapse" id="collapseExample382">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 2
+                                </div>
+                            </div>
+                
+                            <div class="collapse" id="collapseExample383">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="collapse-btn">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample9" aria-expanded="false" aria-controls="collapseExample9">
+                            9. BRKT ASSY, FR SEAT SIDE,RR   RH 5253BH44
+                            
+                             
+                        </button>
+                    </div>
+                    
+                    <!--  isi item 9 -->
+                    <div class="collapse" id="collapseExample9">
+                        <div class="card card-body">
+                            <img src="asset/image/item9-5H45.png" alt="Description of the image" style="max-width:1000px;">
+                            <p>Isi Item 1</p>
+                            
+                            <!-- Tombol-tombol berjejer -->
+                            <div class="btn-group" role="group" aria-label="Button group">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample391" aria-expanded="false" aria-controls="collapseExample391" onclick="hideOtherCollapse('collapseExample391')">
+                                    Assembly Part List
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample392" aria-expanded="false" aria-controls="collapseExample392" onclick="hideOtherCollapse('collapseExample392')">
+                                    Child Item 2
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample393" aria-expanded="false" aria-controls="collapseExample393" onclick="hideOtherCollapse('collapseExample393')">
+                                    Child Item 3
+                                </button>
+                            </div>
+                            
+                            <!-- Isi collapse-nya -->
+                            <div class="collapse" id="collapseExample391">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 1000px;">
+                                    Isi child item 1
+                                </div>
+                            </div>
+                            
+                            <div class="collapse" id="collapseExample392">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 2
+                                </div>
+                            </div>
+                
+                            <div class="collapse" id="collapseExample393">
+                                <div class="card card-body">
+                                    <img src="asset/image/adw.jpg" alt="Description of the image" style="max-width: 100px;">
+                                    Isi child item 3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!-- Back button -->
+        <a href="index.html" class="btn btn-primary btn-back">Kembali</a>
+        <br>
+        <a href="room-topic3.html" class="btn btn-primary btn-next">27 New part</a>
+    </div>
+    
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        // Fungsi untuk melakukan pencarian
+        function searchCollapse() {
+            var input, filter, buttons, button, i, txtValue;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+            buttons = document.querySelectorAll(".collapse-btn button");
+            for (i = 0; i < buttons.length; i++) {
+                button = buttons[i];
+                txtValue = button.textContent || button.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    button.style.display = "";
+                } else {
+                    button.style.display = "none";
+                }
+            }
+        }
+    
+        // Menambahkan event listener untuk inputan pencarian
+        document.getElementById("searchInput").addEventListener("keyup", searchCollapse);
+    </script>
+</body>
+</html>
